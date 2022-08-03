@@ -1,0 +1,186 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 437
+  ClientWidth = 286
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object layConnect: TLayout
+    Align = Client
+    Size.Width = 286.000000000000000000
+    Size.Height = 437.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Layout3: TLayout
+      Align = Center
+      Size.Width = 208.000000000000000000
+      Size.Height = 183.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object edtConnectId: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 0
+        Position.Y = 50.000000000000000000
+        Size.Width = 208.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = '0123456789'
+      end
+      object btnConnect: TRectangle
+        Align = Top
+        Fill.Color = xFF8DB600
+        Margins.Top = 20.000000000000000000
+        Position.Y = 105.000000000000000000
+        Size.Width = 208.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFF8DB600
+        XRadius = 5.000000000000000000
+        YRadius = 5.000000000000000000
+        object Text1: TText
+          Align = Client
+          HitTest = False
+          Size.Width = 208.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Conectar'
+          TextSettings.FontColor = claWhite
+        end
+      end
+      object Text2: TText
+        Align = Top
+        Size.Width = 208.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+  object layChat: TLayout
+    Align = Client
+    Size.Width = 286.000000000000000000
+    Size.Height = 437.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object TabControl1: TTabControl
+      Align = Client
+      Size.Width = 286.000000000000000000
+      Size.Height = 437.000000000000000000
+      Size.PlatformDefault = False
+      TabIndex = 1
+      TabOrder = 0
+      TabPosition = None
+      Sizes = (
+        286s
+        437s
+        286s
+        437s)
+      object TabItem1: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'TabItem1'
+      end
+      object TabItem2: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'TabItem2'
+        object Layout1: TLayout
+          Align = Bottom
+          Position.Y = 393.000000000000000000
+          Size.Width = 286.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object edtTextSend: TRectangle
+            Align = Client
+            Fill.Color = xFFF2F2F2
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Size.Width = 241.000000000000000000
+            Size.Height = 34.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Color = xFFF2F2F2
+            XRadius = 8.000000000000000000
+            YRadius = 8.000000000000000000
+          end
+          object btnSend: TImage
+            MultiResBitmap.Height = 64
+            MultiResBitmap.Width = 64
+            MultiResBitmap.LoadSize = 2
+            MultiResBitmap = <
+              item
+                Width = 64
+                Height = 64
+                PNG = {
+                  89504E470D0A1A0A0000000D4948445200000040000000400806000000AA6971
+                  DE000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  02C149444154785EEDDA39A8D54014C6F1EB821B8A8268A18562612368A158D9
+                  B86165A1AD206ED86A23965A899562AF88F2C0B5B3716945D05E11B573DF515C
+                  0A71F97F482084F3EE4D3233C9646E3EF8C1E311484EDEE3CCE424833E7DFAF4
+                  E9D327A94CC3169CC707BCC176249FF5388D57F85BA09B906456E2389EA05874
+                  DE274C4112598243B88B3FB00A2E3A874E673E76E3067EC12A7298CDE85C6642
+                  CDEB22BEC32AAC0CF50435C64E642A36E00CDEC32AA8AA53883EAB7012560777
+                  B50E5166198EE231AC0BF7E129A2CA421C44950EEEE2185A8F6B0777A17D422B
+                  C977F06FB02E2EB4076834213AB88BC36824213B785DBFB114C1D24407777107
+                  DED3740777B1175ED26607AFEB2716C039BA8B2E7BF0B65C8773D4D1BFC23A41
+                  EC76C24B5EC33A41489ADC3C2AFCAE8ACF98052FD15CED05AC1385701973A0A8
+                  EF58C78CE27DF03103FB107AB9BB84E233FB4358C70E136CF0A19EB003F7619D
+                  D88555BCFE13DEC23A7E322FD1C8E063236EC2BA88AAACE2A7E32AACE387697C
+                  F0B11A7AD8A9BB3F50912A361FDD8C0958C78FD2DAE06339F4005465CFE0BBF8
+                  28061F8BA019FD47581799F15DBC4431F8C832179ADB3F47F14243142FAD0D3E
+                  86454BA8D6F36C6313AA78AD4C51474BE856A8D87C7433AEC02AAA8AC6061F3E
+                  E3E32F2FC1071F21E2AB78B98DCE651BAC62EAF036F86832EA092E4F7C196F83
+                  8F3672005651555C4367A3F7067A78B10A2BCBDBE0A3AD1C815558195F301B9D
+                  CE3C6882631538CA59249113B00A1C651392C862FC8055E464BC7EF1A125A9CD
+                  BCC385FF3F968E8628DA01269315A83254598BE4A289B0556C51745F7CF8CA1A
+                  9479DF18D5E0C3776EC12A3A2FCAC187AF6869B38ACE443FF8F0917BB08A178D
+                  D9928FF6F756F15AF6F48D70F2D1BEC47A25D6C9C147DDEC47F106ECC1D8448F
+                  CAF9B7D2FACC4E5FAA8C55F496F719F4D8BB4BBF18D7B4FDACD2A74F9F3E2967
+                  30F807E1A2335BFC6475F80000000049454E44AE426082}
+                FileName = 
+                  'C:\Users\Arthur Moreira\Documents\Projetos\ChatWithRabbitMQ\app\' +
+                  'assets\img\send.png'
+              end>
+            Align = Right
+            Margins.Top = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Position.X = 246.000000000000000000
+            Position.Y = 10.000000000000000000
+            Size.Width = 40.000000000000000000
+            Size.Height = 24.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object ListView1: TListView
+          ItemAppearanceClassName = 'TListItemAppearance'
+          ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+          HeaderAppearanceClassName = 'TListHeaderObjects'
+          FooterAppearanceClassName = 'TListHeaderObjects'
+          Align = Client
+          Size.Width = 286.000000000000000000
+          Size.Height = 393.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+        end
+      end
+    end
+  end
+end
