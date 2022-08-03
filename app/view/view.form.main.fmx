@@ -1,12 +1,14 @@
-object Form1: TForm1
+object viewFormMain: TviewFormMain
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  Caption = 'Chat'
   ClientHeight = 437
   ClientWidth = 297
+  Position = ScreenCenter
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
   DesignerMasterStyle = 0
   object layConnect: TLayout
     Align = Client
@@ -41,6 +43,7 @@ object Form1: TForm1
         Stroke.Color = xFF8DB600
         XRadius = 5.000000000000000000
         YRadius = 5.000000000000000000
+        OnClick = btnConnectClick
         object Text1: TText
           Align = Client
           HitTest = False
@@ -91,6 +94,15 @@ object Form1: TForm1
         Text = 'TabItem1'
         ExplicitSize.cx = 8.000000000000000000
         ExplicitSize.cy = 8.000000000000000000
+        object listContacts: TVertScrollBox
+          Align = Client
+          Size.Width = 297.000000000000000000
+          Size.Height = 437.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Viewport.Width = 297.000000000000000000
+          Viewport.Height = 437.000000000000000000
+        end
       end
       object TabItem2: TTabItem
         CustomIcon = <
@@ -173,16 +185,14 @@ object Form1: TForm1
             Size.PlatformDefault = False
           end
         end
-        object ListView1: TListView
-          ItemAppearanceClassName = 'TListItemAppearance'
-          ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
-          HeaderAppearanceClassName = 'TListHeaderObjects'
-          FooterAppearanceClassName = 'TListHeaderObjects'
+        object listMessages: TVertScrollBox
           Align = Client
           Size.Width = 297.000000000000000000
           Size.Height = 393.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 1
+          Viewport.Width = 297.000000000000000000
+          Viewport.Height = 393.000000000000000000
         end
       end
     end

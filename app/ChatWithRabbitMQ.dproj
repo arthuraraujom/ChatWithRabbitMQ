@@ -203,8 +203,8 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="view\view.main.pas">
-            <Form>Form1</Form>
+        <DCCReference Include="view\view.form.main.pas">
+            <Form>viewFormMain</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="view\view.frame.message.pas">
@@ -214,6 +214,14 @@
         </DCCReference>
         <DCCReference Include="commons\commons.types.pas"/>
         <DCCReference Include="commons\commons.consts.pas"/>
+        <DCCReference Include="libs\StompClient.pas"/>
+        <DCCReference Include="controller\controller.interfaces.pas"/>
+        <DCCReference Include="controller\controller.chat.pas"/>
+        <DCCReference Include="view\view.frame.contact.pas">
+            <Form>viewFrameContact</Form>
+            <FormType>fmx</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -1029,12 +1037,8 @@
                 <ProjectRoot Platform="Android64" Name="$(PROJECTNAME)"/>
             </Deployment>
             <Platforms>
-                <Platform value="Android">False</Platform>
-                <Platform value="Android64">False</Platform>
-                <Platform value="iOSDevice32">False</Platform>
                 <Platform value="iOSDevice64">True</Platform>
                 <Platform value="iOSSimulator">True</Platform>
-                <Platform value="OSX32">False</Platform>
                 <Platform value="OSX64">True</Platform>
                 <Platform value="Win32">True</Platform>
                 <Platform value="Win64">True</Platform>
