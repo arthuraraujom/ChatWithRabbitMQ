@@ -1,4 +1,7 @@
-object Frame1: TFrame1
+object viewFrameMessage: TviewFrameMessage
+  Align = Top
+  Margins.Top = 5.000000000000000000
+  Margins.Bottom = 10.000000000000000000
   Size.Width = 224.000000000000000000
   Size.Height = 44.000000000000000000
   Size.PlatformDefault = False
@@ -15,16 +18,16 @@ object Frame1: TFrame1
     Stroke.Kind = None
     XRadius = 5.000000000000000000
     YRadius = 5.000000000000000000
-    CalloutWidth = 15.000000000000000000
-    CalloutLength = 7.000000000000000000
+    CalloutWidth = 11.000000000000000000
+    CalloutLength = 9.000000000000000000
     CalloutPosition = Right
     object Text1: TText
       Align = Top
       AutoSize = True
-      Margins.Left = 5.000000000000000000
-      Margins.Right = 5.000000000000000000
-      Position.X = 5.000000000000000000
-      Size.Width = 210.000000000000000000
+      Margins.Left = 8.000000000000000000
+      Margins.Right = 8.000000000000000000
+      Position.X = 8.000000000000000000
+      Size.Width = 205.234375000000000000
       Size.Height = 31.921875000000000000
       Size.PlatformDefault = False
       Text = 'Bom dia! Bom dia! Bom dia! Bom dia! Bom dia!'

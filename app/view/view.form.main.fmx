@@ -9,6 +9,7 @@ object viewFormMain: TviewFormMain
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   OnCreate = FormCreate
+  OnDestroy = FormDestroy
   DesignerMasterStyle = 0
   object layConnect: TLayout
     Align = Client
@@ -81,7 +82,7 @@ object viewFormMain: TviewFormMain
         437s
         297s
         437s)
-      object TabItem1: TTabItem
+      object tabContacts: TTabItem
         CustomIcon = <
           item
           end>
@@ -91,7 +92,7 @@ object viewFormMain: TviewFormMain
         Size.PlatformDefault = False
         StyleLookup = ''
         TabOrder = 0
-        Text = 'TabItem1'
+        Text = 'tabContacts'
         ExplicitSize.cx = 8.000000000000000000
         ExplicitSize.cy = 8.000000000000000000
         object listContacts: TVertScrollBox
@@ -104,7 +105,7 @@ object viewFormMain: TviewFormMain
           Viewport.Height = 437.000000000000000000
         end
       end
-      object TabItem2: TTabItem
+      object tabMessages: TTabItem
         CustomIcon = <
           item
           end>
@@ -114,7 +115,7 @@ object viewFormMain: TviewFormMain
         Size.PlatformDefault = False
         StyleLookup = ''
         TabOrder = 0
-        Text = 'TabItem2'
+        Text = 'tabMessages'
         ExplicitSize.cx = 8.000000000000000000
         ExplicitSize.cy = 8.000000000000000000
         object Layout1: TLayout
@@ -124,7 +125,7 @@ object viewFormMain: TviewFormMain
           Size.Height = 44.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 0
-          object edtTextSend: TRectangle
+          object rectTextSend: TRectangle
             Align = Client
             Fill.Color = xFFF2F2F2
             Margins.Left = 5.000000000000000000
@@ -136,6 +137,18 @@ object viewFormMain: TviewFormMain
             Stroke.Color = xFFF2F2F2
             XRadius = 8.000000000000000000
             YRadius = 8.000000000000000000
+            object edtTextSend: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 0
+              Margins.Left = 3.000000000000000000
+              Margins.Top = 2.000000000000000000
+              Margins.Right = 3.000000000000000000
+              Margins.Bottom = 2.000000000000000000
+              Size.Width = 246.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+            end
           end
           object btnSend: TImage
             MultiResBitmap.Height = 64
@@ -183,6 +196,7 @@ object viewFormMain: TviewFormMain
             Size.Width = 40.000000000000000000
             Size.Height = 24.000000000000000000
             Size.PlatformDefault = False
+            OnClick = btnSendClick
           end
         end
         object listMessages: TVertScrollBox

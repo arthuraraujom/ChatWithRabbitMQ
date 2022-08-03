@@ -8,7 +8,7 @@ uses
   FMX.Objects, commons.types, commons.consts;
 
 type
-  TFrame1 = class(TFrame)
+  TviewFrameMessage = class(TFrame)
     rectMessage: TCalloutRectangle;
     Text1: TText;
 
@@ -31,23 +31,34 @@ implementation
 
 { TFrame1 }
 
-procedure TFrame1.SetMessageText(const Value: string);
+procedure TviewFrameMessage.SetMessageText(const Value: string);
 begin
   text1.Text  := Value;
 end;
 
-procedure TFrame1.SetMessageType(const Value: tcommonTypeMessage);
+procedure TviewFrameMessage.SetMessageType(const Value: tcommonTypeMessage);
 begin
 
   text1.TextSettings.FontColor  := CONST_COLOR_MESSAGE_TEXT;
 
   case Value of
-    ttpSender   : rectMessage.fill.Color :=  CONST_COLOR_MESSAGE_SENDER;
-    ttpRecipient: rectMessage.fill.Color :=  CONST_COLOR_MESSAGE_RECIPIENT;
+    ttpSender:
+      begin
+        rectMessage.fill.Color :=  CONST_COLOR_MESSAGE_SENDER;
+        rectMessage.Margins.Left  := 30;
+        rectMessage.CalloutPosition := TCalloutPosition.Right;
+      end;
+
+    ttpRecipient:
+      begin
+        rectMessage.fill.Color    :=  CONST_COLOR_MESSAGE_RECIPIENT;
+        rectMessage.Margins.right := 30;
+        rectMessage.CalloutPosition := TCalloutPosition.left;
+      end;
   end;
 end;
 
-procedure TFrame1.Text1Resize(Sender: TObject);
+procedure TviewFrameMessage.Text1Resize(Sender: TObject);
 begin
   self.Height := text1.Height + 10;
 end;
